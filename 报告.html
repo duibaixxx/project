@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+  <style>
+    body {
+      background-size: cover;
+      background-image: url(11.jpeg);
+    }
+
+    header {
+      margin-right: auto;
+      margin-left: auto;
+      width: 60%;
+      background-size: cover;
+      background-image: url(R-C2.jpg);
+    }
+
+    h1,
+    h2 {
+      text-align: center;
+    }
+
+    p,
+    h4 {
+      text-align: center;
+      color: white;
+    }
+    .sidenav {
+  width: 130px;
+  position: fixed;
+  z-index: 1;
+  top: 20px;
+  left: 10px;
+  background: rgb(0, 0, 0);
+  overflow-x: hidden;
+  padding: 8px 0;
+}
+
+.sidenav a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #bda22a;
+  display: block;
+}
+
+.sidenav a:hover {
+  color: #794d06;
+}
+    
+    .center {
+      margin-right: auto;
+      margin-left: auto;
+      width: 60%;
+      background-size: cover;
+      text-align: center;
+    }
+
+    .footer {
+      background-color: #1f0808d5;
+      padding: 0;
+      margin: auto;
+      width: 60%;
+      text-align: center;
+      clear: both;
+    }
+
+    /* 为文章添加卡片效果 */
+    .card {
+      background-color: rgb(127, 76, 25);
+      padding: 12px;
+      margin-top: 20px;
+      width: 55%;
+      margin-right: auto;
+      margin-left: auto;
+      border-radius: 25px;
+
+
+    }
+
+    /* 清除列之后的浮动 */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+
+
+    /* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+    @media screen and (max-width: 800px) {
+
+      .leftcolumn,
+      .rightcolumn {
+        width: 100%;
+        padding: 0;
+      }
+    }
+
+    /* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+    @media screen and (max-width: 400px) {
+      .topnav a {
+        float: none;
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>Cthulhu Mythos</h1>
+    <h2>克苏鲁神话</h2>
+
+  </header>
+  <div class="sidenav">
+    <a href="#j">网站介绍</a>
+    <a href="#s">网站设计</a>
+    <a href="#n">网站内容</a>
+    <a href="#z">总结</a>
+  </div>
+  <div class="center">
+    <h1>作业报告</h1>
+    <h3>组长：李若金 0223669 软件工程2212班<br>
+      成员：罗宇越 0223730 软件工程2212班
+    </h3>
+  </div>
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2 id="j">网站介绍</h2>
+        <h5>名称：克苏鲁神话<br>
+          主题：克苏鲁相关<br>
+          选题目的:<br>
+          学习HTML和CSS以后发现确实有很多好玩的内容可以和大家分享,然后就想到了这个有些小众的游戏题材。
+          算是“抛砖引玉”吧,希望有更多感兴趣的人来体验这个游戏,感受那种来自人性的恐惧与抉择；
+          也希望更多对此有兴趣,有想象和创造力的创作者加入COC模组的创作,带给我们更有深度的文学体验。
+        </h5>
+      </div>
+
+    </div>
+    <div class="leftcolumn">
+      <div class="card">
+        <h2 id="s">网站设计</h2>
+        <h4>主体使用了黑黄配色，突出克苏鲁风格。分为网站名称加上图片，然后是导航栏，内容，页脚。首页简洁美观。<br>
+          同时一级导航二级导航逐步细化，内容模块划分更加清晰</h4>
+      </div>
+
+    </div>
+    <div class="leftcolumn">
+      <div class="card">
+        <h2 id="n">网站内容</h2>
+
+        <h5>使用了大量的基础CSS,试图在能力范围内做出最舒适的效果。</h5>
+        <h3>相关效果</h3>
+        <h5>主页主体部分采用
+          图片排版，设置为比例显示更加美观，同时将鼠标移至图片上时辉浮现文字效果</h5>
+        <img src="y1.jpg" width="100%" />
+       <img src="y2.jpg" width="100%" />
+        <h2>同时各子页布局也尽力差异化</h2>
+        <img src="y3.jpg" width="100%" />
+        <img src="y4.jpg" width="100%" />
+        <h3>- html: 表格table, 图片img, 列表ul(或ol)
+          - css: float+clear布局, position定位（absolute, fixed)，文字悬浮于图片上，伪类，伪元素</h3>
+          <h3>做了一个简单的登录界面</h3>
+          <img src="l.jpg" width="100%" />
+        <h3>遇到的问题：</h3>
+        <h5>1.背景没有动态。原本是想追求动态的背景效果,做出羊皮卷缓缓展开的效果,但是发现只能做到羊皮卷固定的效果,代码比现在更加混乱,所以果断放弃了。<br>
+          2.首页图片的大小和排版,不知道为什么一开始总是会出现中间空心的情况,好在后面修复了。<br>
+          3.一些链接的文字颜色虽然用了CSS但依旧无效,无奈之下用了大量的style。
+        </h5>
+      </div>
+
+    </div>
+    <div class="leftcolumn">
+      <div class="card">
+        <h2 id="z">总结</h2>
+        <h3>整个网站耗时小组中两人6天做完，期间也是遇到了不少代码技术上的问题，也可
+          能是自身学艺不精，不过就自身来说，对网站整体效果还是比较满意，整体风格比较黑暗，与克
+          苏鲁主题相契合，界面也尽力做到简洁美观，在技术上的学习也让我们进步很多，感触良多。网站内容也经过精心挑选
+          希望能让圈外人也能对克苏鲁有一个大概的了解。最后祝老师新春快乐！</h3>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="footer">
+    <h4>
+      <a href="首页.html" style="color: white;">Cthulhu Mythos</a>
+    </h4>
+    <p>作者主页
+      <a href="https://github.com/duibaixxx" style="color: white;">duibaixxx</a>
+      <a href="https://gitee.com/across-the-starry-sea" style="color: white;">ATSS</a>
+    </p>
+  </div>
+</body>
+
+</html>

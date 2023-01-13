@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+
+<head>
+    <style>
+        body {
+            background-size: cover;
+            background-image: url(11.jpeg);
+        }
+
+        header {
+            margin-right: auto;
+            margin-left: auto;
+            width: 60%;
+            background-size: cover;
+            background-image: url(呼唤.png);
+        }
+
+        h1,
+        h2 {
+            text-align: left;
+        }
+
+        p,
+        h4 {
+            text-align: center;
+            color: white;
+        }
+
+        .ul_1 {
+            list-style-type: none;
+            padding: 0%;
+            margin: 0%;
+            overflow: hidden;
+            background-color: #1f0808e6;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a,
+        .dropbtn {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 32px 14px 32px;
+            text-decoration: none;
+        }
+
+        li a:hover,
+        .dropdown:hover.dropbtn {
+            background-color: #716b6bf4;
+        }
+
+        li.dropdown {
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #937171f4;
+            min-width: auto;
+            box-shadow: 0px 8px 16px 0px #635f59f4;
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 24px;
+            text-decoration: none;
+            display: block;
+            text-align: center;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ffbb5589;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .center {
+            margin-right: auto;
+            margin-left: auto;
+            width: 60%;
+            background-size: cover;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #1f0808d5;
+            padding: 0;
+            margin: auto;
+            width: 60%;
+            text-align: center;
+            clear: both;
+        }
+
+        .card {
+            background-color: rgb(127, 76, 25);
+            padding: 12px;
+            margin-top: 20px;
+            width: 55%;
+            margin-right: auto;
+            margin-left: auto;
+            border-radius: 25px;
+
+
+        }
+
+        /* 清除列之后的浮动 */
+        .row:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+
+
+        /* 响应式布局 - 当屏幕的宽度小于 800 像素时，使两列堆叠而不是并排 */
+        @media screen and (max-width: 800px) {
+
+            .leftcolumn,
+            .rightcolumn {
+                width: 100%;
+                padding: 0;
+            }
+        }
+
+        /* 响应式布局 - 当屏幕的宽度小于 400 像素时，使导航链接堆叠而不是并排 */
+        @media screen and (max-width: 400px) {
+            .topnav a {
+                float: none;
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Call Of Cthulhu</h1>
+        <h2>克苏鲁的呼唤</h2>
+        <ul class="ul_1">
+            <li><a href="index.html">首页</a></li>
+            <li class="dropdown">
+                <a href="克苏鲁神话.html" class="dropbtn">克苏鲁神话</a>
+                <div class="dropdown-content">
+                    <a href="作者.html">作者</a>
+                    <a href="世界观.html">世界观</a>
+                </div>
+            </li>
+            <li class="dropdown">
+                <a href="克苏鲁的呼唤.html">克苏鲁的呼唤</a>
+                <div class="dropdown-content">
+                    <a href="规则简介.html">COC跑团</a>
+                    <a href="游玩表格.html">游玩表格</a>
+                    <a href="游戏推荐.html">游戏推荐</a>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <div class="leftcolumn">
+        <div class="card">
+            <h2>克苏鲁跑团调查员介绍</h2>
+            <h4>在克苏鲁的呼唤（COC）跑团游戏中，您扮演的是普通人，没有特殊能力，而您将不得不面对未知的恐怖
+                游戏开始前，请向您的守秘人（KP）询问游戏的时代，并选择符合时代的相应职业和技能。您可以
+                在《调查员手册》或《快速入门规则》中找到有关每个职业和技能的更多信息。</h4>
+        </div>
+
+    </div>
+    <div class="leftcolumn">
+        <div class="card">
+            <img src="b.jpg" width="100%" />
+            详情可见：<a href="https://www.cthulhuclub.com/charSheetGenerator/">克苏鲁公社</a>
+        </div>
+
+    </div>
+    <div class="footer">
+        <h4>
+            <a href="报告.html" style="color: white;">Cthulhu Mythos</a>
+        </h4>
+        <p style="color: white;">作者主页
+            <a href="https://github.com/duibaixxx" style="color: white;">duibaixxx</a>
+            <a href="https://gitee.com/across-the-starry-sea" style="color: white;">ATSS</a>
+        </p>
+    </div>
+</body>
+
+</html>
